@@ -18,6 +18,20 @@
 		public $profesor;
 		public $disponible;
 
+		#Creación del método imprimirInfo
+		public function imprimirInfo(){
+			return "El nombre del curso es: ".$this->nombre." y quién imparte el curso es ".$this->profesor."<br>";
+		}
+
+		public function validaDisponibilidad(){
+			if($this->disponible == true){
+				return "El curso si está disponible<br>";
+
+			} else {
+				return "El curso no está disponible<br>";
+			}
+		}
+
 
 	}
 
@@ -31,8 +45,12 @@
 	$php->moneda = 'MXN';
 	$php->profesor = 'Yesi Days';
 	$php->disponible = true;
+	
 
-	var_dump($php);
+	//var_dump($php);
+
+	echo $php->imprimirInfo();
+	echo $php->validaDisponibilidad();
 
 	$javascript = new Curso();
 	$javascript->nombre = 'javascript desde cero';
@@ -44,7 +62,9 @@
 
 	echo "<br>";
 
-	var_dump($javascript);
+	//var_dump($javascript);
+
+	echo $javascript->imprimirInfo();
 
 
 
