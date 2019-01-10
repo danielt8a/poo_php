@@ -20,7 +20,14 @@
 			echo $curso1->obtenerTitulo()."<br>";
 			echo $curso1->obtenerProfesor()."<br>";
 
-			$curso1->asignarTitulo('POO en PHP I');
+			$curso1->asignarTitulo('POO en PHP I')."<br>";
+			echo $curso1->obtenerTitulo()."<br>";
+
+			$curso1->asignarRequerimiento(['PHP desde cero', 'Conocimientos básicos de PHP', 'Buena actitud', 'Práctica']);
+
+			echo "<h3>Mis requerimientos para la clase:</h3>";
+
+			$curso1->obtenerRequerimiento();
 
 		?>
 		<header>

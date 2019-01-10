@@ -59,7 +59,7 @@
 		public function obtenerRequerimiento(){
 			if(!empty($this->listado)){
 				foreach ($this->listado as $lista) {
-					echo "<p>".$lista."</p>"
+					echo "<p>".$lista."</p>";
 				}
 			}
 		}
@@ -69,7 +69,7 @@
 		}
 
 		public function obtenerConocimiento(){
-			
+
 		}
 
 
