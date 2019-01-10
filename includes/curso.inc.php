@@ -1,4 +1,19 @@
 <?php
+
+	#Interfaces -> interface -> implements
+
+	interface Requerimiento {
+		public function asignarRequerimiento($listado);
+		public function obtenerRequerimiento();
+
+	}
+
+	interface Conocimiento {
+		public function asignarConocimiento($listado);
+		public function obtenerConocimiento();
+
+	}
+
 	class Curso{
 		
 		private $titulo;
@@ -15,17 +30,23 @@
 			$this->duracion = $duracion;
 			$this->costo = $costo;
 			$this->disponible = $disponible;
-		}
+	}
 
 		#Encapsulación
 		#Getter - Setter
 
+		#Getter
 		public function obtenerTitulo(){
 			return $this->titulo;
 		}
 
 		public function obtenerProfesor(){
 			return $this->profesor;
+		}
+
+		#Setter
+		public function asignarTitulo($titulo){
+			$this->titulo = $titulo;
 		}
 
 
