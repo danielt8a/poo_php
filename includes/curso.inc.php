@@ -22,6 +22,7 @@
 		private $costo;
 		private $disponible;
 		private $listado;
+		private $conocimiento;
 
 		//Creación del constructor
 
@@ -65,11 +66,16 @@
 		}
 
 		public function asignarConocimiento($listado){
+			$this->conocimiento = $conocimiento;
 
 		}
 
 		public function obtenerConocimiento(){
-
+			if(!empty($this->conocimiento)){
+				foreach ($this->conocimiento as $lista) {
+					echo "<p>".$lista."</p>";
+				}
+			}
 		}
 
 
