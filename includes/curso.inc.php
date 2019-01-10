@@ -21,6 +21,7 @@
 		private $duracion;
 		private $costo;
 		private $disponible;
+		private $listado;
 
 		//Creación del constructor
 
@@ -48,6 +49,30 @@
 		public function asignarTitulo($titulo){
 			$this->titulo = $titulo;
 		}
+
+		#Implementar las funciones de esas interfaces
+
+		public function asignarRequerimiento($listado){
+			$this->listado = $listado;
+		}
+
+		public function obtenerRequerimiento(){
+			if(!empty($this->listado)){
+				foreach ($this->listado as $lista) {
+					echo "<p>".$lista."</p>"
+				}
+			}
+		}
+
+		public function asignarConocimiento($listado){
+
+		}
+
+		public function obtenerConocimiento(){
+			
+		}
+
+
 
 
 	}
