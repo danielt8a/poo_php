@@ -17,6 +17,17 @@
 			$this->disponible = $disponible;
 		}
 
+		#Encapsulación
+		#Getter - Setter
+
+		public function obtenerTitulo(){
+			return $this->titulo;
+		}
+
+		public function obtenerProfesor(){
+			return $this->profesor;
+		}
+
 
 	}
 
