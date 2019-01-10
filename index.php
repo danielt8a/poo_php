@@ -10,7 +10,7 @@
 			define('INC','/includes/');
 			require_once __DIR__ . INC. 'curso.inc.php';
 
-			$curso = new Curso();
+			$curso1 = new Curso('POO en PHP','Yesi Days', '3 sesiones', 10, true);
 
 		?>
 		<header>
