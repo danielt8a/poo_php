@@ -14,7 +14,7 @@
 
 	}
 
-	class Curso{
+	class Curso implements Requerimiento, Conocimiento {
 		
 		private $titulo;
 		private $profesor;
