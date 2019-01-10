@@ -11,6 +11,11 @@
 			require_once __DIR__ . INC. 'curso.inc.php';
 
 			$curso1 = new Curso('POO en PHP','Yesi Days', '3 sesiones', 10, true);
+			$curso2 = new Curso('JavaScript desde 0','Álvaro Felipe', '6 sesiones', 0, true);
+
+			var_dump($curso1);
+			echo "<br>";
+			var_dump($curso2);
 
 		?>
 		<header>

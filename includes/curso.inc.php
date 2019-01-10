@@ -1,11 +1,10 @@
 <?php
 	class Curso{
 		
-		private $nombre;
+		private $titulo;
+		private $profesor;
 		private $duracion;
 		private $costo;
-		private $moneda;
-		private $profesor;
 		private $disponible;
 
 		//Creación del constructor
