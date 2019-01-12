@@ -29,6 +29,14 @@
 
 			$curso1->obtenerRequerimiento();
 
+			$curso1->asignarConocimiento(['POO en PHP', 'Herencia', 'Encapsulamiento', 'Interfaces', 'Método constructor']);
+			echo "<h3>Al finalizar el curso el alumno estará familiarizado con los siguientes temas:</h3>";
+			$curso1->obtenerConocimiento();
+
+			echo Curso::$moneda;
+			echo Curso::obtenerDenominacion();
+
+
 		?>
 		<header>
 			<h1>POO avanzado</h1>

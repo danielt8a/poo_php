@@ -22,7 +22,10 @@
 		private $costo;
 		private $disponible;
 		private $listado;
-		private $conocimiento;
+
+		#Atributo estático
+		public static $moneda = 'USD';
+		
 
 		//Creación del constructor
 
@@ -33,6 +36,11 @@
 			$this->costo = $costo;
 			$this->disponible = $disponible;
 	}
+
+		#Destructor
+		// public function __destruct(){
+		// 	echo "Destruyendo ".$this->titulo."<br>";
+		// }
 
 		#Encapsulación
 		#Getter - Setter
@@ -66,16 +74,20 @@
 		}
 
 		public function asignarConocimiento($listado){
-			$this->conocimiento = $conocimiento;
+			$this->listado = $listado;
 
 		}
 
 		public function obtenerConocimiento(){
-			if(!empty($this->conocimiento)){
-				foreach ($this->conocimiento as $lista) {
+			if(!empty($this->listado)){
+				foreach ($this->listado as $lista) {
 					echo "<p>".$lista."</p>";
 				}
 			}
+		}
+
+		static function obtenerDenominacion(){
+			return self::$moneda;
 		}
 
 
