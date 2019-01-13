@@ -7,7 +7,12 @@
 	</head>
 	<body>
 		<?php
-			define('INC','/includes/');
+
+			#Incluído el archivo global con todas las clases
+
+			require_once __DIR__ . 'includes/global.inc.php';
+
+			/*define('INC','/includes/');
 			require_once __DIR__ . INC. 'curso.inc.php';
 
 			$curso1 = new Curso('POO en PHP','Yesi Days', '3 sesiones', 10, true);
@@ -34,8 +39,9 @@
 			$curso1->obtenerConocimiento();
 
 			echo Curso::$moneda;
+			echo "<br>";
 			echo Curso::obtenerDenominacion();
-
+*/
 
 		?>
 		<header>
