@@ -41,7 +41,10 @@
 			echo Curso::$moneda;
 			echo "<br>";
 			echo Curso::obtenerDenominacion();
+
 */
+			#Instanciar un estudiante
+			$estudiante = new Estudiante('Daniel', 'Télles','danieltelles8a@gmail.com')
 
 		?>
 		<header>
