@@ -1,11 +1,8 @@
 <?php
 	class Profesor extends Persona {
 
-		public function __construct ($nombre, $apellido, $email){
-
-			parent::__construct($nombre, $apellido, $email
-			)
+		public function bienvenida(){
+			return "Bienvenido profesor {$this->nombre}";
 		}
-
 	}
 ?>

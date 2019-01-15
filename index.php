@@ -10,7 +10,7 @@
 
 			#Incluído el archivo global con todas las clases
 
-			require_once __DIR__ . 'includes/global.inc.php';
+			require_once __DIR__ . '/includes/global.inc.php';
 
 			/*define('INC','/includes/');
 			require_once __DIR__ . INC. 'curso.inc.php';
@@ -44,7 +44,17 @@
 
 */
 			#Instanciar un estudiante
-			$estudiante = new Estudiante('Daniel', 'Télles','danieltelles8a@gmail.com')
+			$estudiante = new Estudiante('Daniel', 'Télles','danieltelles8a@gmail.com');
+
+			#var_dump($estudiante);
+
+			echo "<p>".$estudiante->bienvenida()."</p>";
+
+			#Instanciar un profesor
+			$profesor = new Profesor('Yesi','Days','silvercorp@gmai.com');
+
+			echo "<p>".$profesor->bienvenida()."</p>";
+
 
 		?>
 		<header>

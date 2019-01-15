@@ -1,6 +1,15 @@
 <?php
 	
+	trait Compra {
+		private $compra;
+		function validarCompra(){
+			return "Compra exitosa";
+		}
+	}
+
 	class Persona {
+
+		use Compra;
 
 		public $nombre;
 		public $apellido;
@@ -18,6 +27,8 @@
 		public function bienvenida(){
 			return "Bienvenido {$this->nombre} a PHP ";
 		}
+
+		#Con la palabra reservada final podemos indicar que una función no se puede sobreescribir.
 
 		public function despedida(){
 			return "Hasta pronto {$this->nombre}";
