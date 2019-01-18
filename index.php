@@ -50,10 +50,16 @@
 
 			echo "<p>".$estudiante->bienvenida()."</p>";
 
+			echo "<p>".$estudiante->validarCompra()."</p><br>";
+
+			echo $estudiante::MONEDA;
+
 			#Instanciar un profesor
 			$profesor = new Profesor('Yesi','Days','silvercorp@gmai.com');
 
-			echo "<p>".$profesor->bienvenida()."</p>";
+			echo "<p>".$profesor->bienvenida()."</p><br>";
+
+			echo $estudiante::MONEDA;
 
 
 		?>
